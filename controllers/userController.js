@@ -1,3 +1,5 @@
+// controllers/userController.js
+
 const User = require('../models/usersModel');
 
 const getUsers = (req, res) => {

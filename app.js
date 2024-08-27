@@ -1,12 +1,13 @@
+// app.js
+
 const express = require('express');
-const userRoutes = require('./routes/userRoute'); // Corrigi o nome do arquivo para 'userRoute.js'
-const cors = require('cors');   
+const userRoutes = require('./routes/userRoute');
+const cors = require('cors');
 
 const app = express();
 
 // Middleware para interpretar o JSON no corpo das requisições
 app.use(express.json());
-
 app.use(cors());
 
 // Rotas da API
